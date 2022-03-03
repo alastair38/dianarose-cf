@@ -1,0 +1,52 @@
+{
+    "key": "group_61e548ea9059b",
+    "title": "Featured publication",
+    "fields": [
+        {
+            "key": "field_61fbfcff7525b",
+            "label": "Featured Publication",
+            "name": "featured_publications",
+            "type": "relationship",
+            "instructions": "Choose from the list of articles and books to select a featured publication. Start typing a search word to filter the list. You can select more than one publication.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "articles",
+                "books"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/featured-publications"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643905598
+}
