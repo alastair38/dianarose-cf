@@ -1,0 +1,79 @@
+{
+    "key": "group_622229307f029",
+    "title": "Publication Details",
+    "fields": [
+        {
+            "key": "field_62222cab9b67b",
+            "label": "Publication title",
+            "name": "publication_title",
+            "type": "text",
+            "instructions": "Add publication title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62222930baf91",
+            "label": "Publication details",
+            "name": "publication_details",
+            "type": "textarea",
+            "instructions": "Add publication details here. eg: Wallcraft, J, Sweeney, A, Read, J (2003). London: Sainsbury Centre for Mental Health",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_62222930d4d3f",
+            "label": "Publication link",
+            "name": "publication_link",
+            "type": "url",
+            "instructions": "Add link to publication",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/featured-publications-external"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1646407927
+}
