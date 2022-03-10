@@ -53,6 +53,22 @@ function register_acf_block_types() {
         'keywords'          => array( 'featured', 'pages' ),
     ));
 
+    acf_register_block_type(array(
+      'name'              => 'featured_pages_extended',
+      'title'             => __('Featured Pages - Extended'),
+      'description'       => __('Showcase your main pages with an excerpt in a grid layout'),
+      'render_template' => plugin_dir_path( __FILE__ ) . '/layouts/featured_pages_extended.php',
+      'category'          => 'custom-blocks',
+      'icon' => array(
+      // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+        'foreground' => '#ff005d',
+      // Specifying a dashicon for the block
+        'src' => 'admin-post',
+      ),
+      //'enqueue_style' => get_template_directory_uri() . '/assets/css/style.css',
+      'keywords'          => array( 'featured', 'pages' ),
+  ));
+
 
     acf_register_block_type(array(
       'name'              => 'featured_publications',
