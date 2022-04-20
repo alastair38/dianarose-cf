@@ -1,6 +1,6 @@
 {
     "key": "group_6225ee41c558d",
-    "title": "Featured Pages - Extended",
+    "title": "Featured Pages : Extended",
     "fields": [
         {
             "key": "field_62483377d9e00",
@@ -63,5 +63,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648898960
+    "modified": 1650484889
 }
