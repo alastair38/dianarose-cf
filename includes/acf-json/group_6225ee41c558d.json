@@ -3,6 +3,25 @@
     "title": "Featured Pages - Extended",
     "fields": [
         {
+            "key": "field_62483377d9e00",
+            "label": "Section title",
+            "name": "section_title",
+            "type": "text",
+            "instructions": "Optional section title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_6225f16688020",
             "label": "Pages",
             "name": "pages",
@@ -44,5 +63,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1646653837
+    "modified": 1648898960
 }

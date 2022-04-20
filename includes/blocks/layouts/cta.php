@@ -21,13 +21,11 @@ $link = get_field('cta_link');
 $linkText = get_field('cta_link_text');
 $image = get_field('cta_image');
 $image_alt = $image['alt'];
-
-$bg = get_field('background');
 ?>
 
 
-<div id="<?php echo $id;?>" class="row block cta-wrapper <?php echo $bg;?> lighten-4">
-  <div class="cta container">
+<div id="<?php echo $id;?>" class="row block cta-wrapper">
+  <div class="cta">
     <article class="col s12 center">
 
       <?php if($image):?>

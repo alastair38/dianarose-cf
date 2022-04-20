@@ -33,8 +33,8 @@ $args = array(
 
 $latest_posts = get_posts( $args );
 
-echo '<div class="row block latest-news"><div class="container">';
-  echo '<h2 class="col s12 h5 center">Latest News</h2><div class="news-items col s12">';
+echo '<div class="block latest-news m-block-default m-inline-default">';
+  echo '<h2 class="h4 center">Blog</h2>';
 foreach($latest_posts as $post) {
   setup_postdata( $post );?>
   <article id="post-<?php the_ID(); ?>" class="blog-card">
@@ -53,8 +53,8 @@ foreach($latest_posts as $post) {
 
     <div class="card-content">
 
-  		<h2><a href="<?php the_permalink($post->ID) ?>" rel="bookmark"><?php echo get_the_title($post->ID); ?></a></h2>
-    	<span class="date"><?php echo $post_date;?></span>
+  		<h3><a href="<?php the_permalink($post->ID) ?>" rel="bookmark"><?php echo get_the_title($post->ID); ?></a></h3>
+    	<!-- <span class="date"><?php echo $post_date;?></span> -->
 
       <?php
 
@@ -68,7 +68,7 @@ foreach($latest_posts as $post) {
   </article>
 <?php }
 
-echo '</div></div></div>';
+echo '</div>';
 
 wp_reset_postdata();
 ?>

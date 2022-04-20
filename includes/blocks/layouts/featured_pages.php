@@ -33,10 +33,10 @@ if( have_rows('pages') ):
   $title = get_field('section_title');
   $bg = get_field('background');
 
-  echo '<div id="' . $id . '" class="block feat-pages">';
+  echo '<div id="' . $id . '" class="block feat-pages m-block-default m-inline-default">';
 
   if($title) {
-    echo '<h2 class="col s12 h4">' . $title . '</h2>';
+    echo '<h2 class="h4 center">' . $title . '</h2>';
   }
 
     // loop through the rows of data

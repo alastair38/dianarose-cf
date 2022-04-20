@@ -23,9 +23,7 @@ $image = get_field('cta_image');
 ?>
 
 
-<div id="<?php echo $id;?>" class="row block cta-bg-wrapper blue-grey darken-4 white-text z-depth-1"
-
->
+<div id="<?php echo $id;?>" class="row block cta-bg-wrapper blue-grey darken-4 white-text z-depth-1 m-block-default m-inline-default">
     <article class="center">
 
       <?php if($headerText):?>

@@ -29,9 +29,16 @@ if( !empty($block['align']) ) {
 
 $featured_pages = get_field('pages');
 $count = count(get_field('pages'));
+$title = get_field('section_title');
+
+
+  
 if( $featured_pages ): ?>
-    <div id="<?php echo $id;?>" class="block columns-<?php echo $count;?> feat-pages-extended">
-    <?php foreach( $featured_pages as $post ): 
+    <div id="<?php echo $id;?>" class="block columns-<?php echo $count;?> feat-pages-extended m-block-default m-inline-default">
+    <?php if($title) {
+    echo '<h2 class="h4 center">' . $title . '</h2>';
+    }
+    foreach( $featured_pages as $post ): 
 
         // Setup this post for WP functions (variable must be named $post).
         setup_postdata($post); 
