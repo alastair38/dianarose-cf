@@ -40,6 +40,7 @@ foreach($latest_posts as $post) {
   <article id="post-<?php the_ID(); ?>" class="blog-card">
 
     <?php
+    $link = get_field('blog_link', $post->ID);
     $post_date = get_the_date( 'F j, Y', $post->ID );
     if ( has_post_thumbnail($post->ID) ) {
     echo get_the_post_thumbnail($post->ID, array(300, 300) );
@@ -53,7 +54,7 @@ foreach($latest_posts as $post) {
 
     <div class="card-content">
 
-  		<h3><a href="<?php the_permalink($post->ID) ?>" rel="bookmark"><?php echo get_the_title($post->ID); ?></a></h3>
+  		<h3><?php echo get_the_title($post->ID); ?></h3>
     	<!-- <span class="date"><?php echo $post_date;?></span> -->
 
       <?php
@@ -61,6 +62,12 @@ foreach($latest_posts as $post) {
     	if( strtotime( $post->post_date ) > strtotime('-7 day') ) {
     			echo '<span class="new badge"></span>';
     	}
+
+      if( $link ) {
+        echo '<div class="article-link"><a itemprop="sameAs" aria-label="Read ' . get_the_title($post->ID) . '" href="' . $link . '">Read Article</a></div>';
+        } else {
+          echo '<div class="article-link"><a aria-label="Read ' . get_the_title($post->ID) . '" href="' . the_permalink() . '" rel="bookmark">Read Article</a></div>';
+        }
     	?>
 
     </div>
